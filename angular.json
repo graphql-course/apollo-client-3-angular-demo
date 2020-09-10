@@ -13,6 +13,10 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+              "graphql-tag",
+              "zen-observable"
+           ],
             "outputPath": "dist/strangle-game",
             "index": "src/index.html",
             "main": "src/main.ts",
