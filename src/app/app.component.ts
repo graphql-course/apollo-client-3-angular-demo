@@ -1,6 +1,6 @@
 import { Apollo } from 'apollo-angular';
 import { Component } from '@angular/core';
-import { gql } from '@apollo/client/core';
+import gql from 'graphql-tag';
 
 @Component({
   selector: 'app-root',
