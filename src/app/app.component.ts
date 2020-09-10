@@ -1,4 +1,5 @@
-import { Apollo, gql } from 'apollo-angular';
+import { Apollo } from 'apollo-angular';
+import gql from 'graphql-tag';
 import { Component } from '@angular/core';
 
 @Component({
