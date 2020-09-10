@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import {NgModule} from '@angular/core';
 import {APOLLO_OPTIONS} from 'apollo-angular';
 import {ApolloClientOptions, InMemoryCache} from '@apollo/client/core';
@@ -12,6 +13,7 @@ export function createApollo(httpLink: HttpLink): ApolloClientOptions<any> {
 }
 
 @NgModule({
+  imports: [HttpClientModule],
   providers: [
     {
       provide: APOLLO_OPTIONS,
